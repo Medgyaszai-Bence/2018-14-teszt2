@@ -29,16 +29,19 @@ namespace GitConsoleApp
             {
                 Console.WriteLine(t[i]);
             }
-            int max;
+            int max, min;
+
             max = t[0];
+            min = t[0];
             for (int i = 1; i < t.Length; i++)
 
             {
 
                 if (t[i] > max) max = t[i];
+                if (t[i] < min) min = t[i];
 
             }
-            Console.WriteLine("Legnagyobb szám: {0}", max);
+            Console.WriteLine("Legnagyobb szám: {0} \nLegkissebb szám: {1}", max,min);
 
         }
     }
