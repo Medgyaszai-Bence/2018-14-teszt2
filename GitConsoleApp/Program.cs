@@ -10,9 +10,13 @@ namespace GitConsoleApp
     {
         static void Main(string[] args)
         {
-           
-            Console.WriteLine("Kérem adjon meg 10 számot.");
-            int[] t = new int[10];
+            Console.WriteLine("Adja meg hány számot szeretne bekérni.");
+            
+            int bekeres = Convert.ToInt32(Console.ReadLine());
+            int[] t = new int[bekeres];
+
+            Console.WriteLine("Kérem adjon meg {0} számot.", bekeres);
+
             int szamok;
             for (int i = 0; i < t.Length; i++)
             {
